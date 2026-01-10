@@ -1,0 +1,112 @@
+/* 
+Class Selector
+
+
+The class selector targets HTML elements based on their class attribute value. Use a period (.) followed by the class name:
+
+.classname {
+    property: value;
+}
+Example:
+
+.highlight {
+    background-color: yellow;
+    color: black;
+}
+This targets all elements with class="highlight" and applies the specified styles.
+
+
+ID Selector
+
+
+The ID selector targets a specific HTML element using its id attribute. ID selectors are unique and can only be applied to a single element on a page.
+
+Use a hash symbol (#) followed by the ID value:
+
+#idname {
+    property: value;
+}
+Example:
+
+#intro {
+    color: blue;
+    font-size: 20px;
+}
+
+
+Group Selectors
+
+
+The group selector allows you to apply the same styles to multiple HTML elements by separating selectors with commas (,):
+
+selector1, selector2, selector3 {
+    property: value;
+}
+Example grouping element selectors:
+
+h1, h2, p {
+    color: blue;
+    font-size: 16px;
+}
+You can group any type of selectors (type, class, ID):
+
+h1, .highlight, #intro {
+    background-color: yellow;
+}
+
+
+Universal Selector
+
+
+The universal selector targets every HTML element on a page using an asterisk (*):
+
+* {
+    property: value;
+}
+Example setting global text color and font size:
+
+* {
+    color: black;
+    font-size: 14px;
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Selectors</title>
+    <style>
+      p {
+        color: blue;
+        font-size: 16px;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      #special {
+        background-color: lightgray;
+        font-size: 20px;
+      }
+      h1,
+      li {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a main heading</h1>
+    <h2 class="highlight">This is a subheading</h2>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <div class="highlight">This is a division.</div>
+    <ul id="special">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </body>
+</html>
+
+*/

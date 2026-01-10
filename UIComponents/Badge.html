@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Badges</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 40px;
+        background-color: #f5f5f5;
+        display: flex;
+        gap: 20px;
+      }
+
+      .button {
+        position: relative; /* needed for badge positioning */
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        background-color: #4cafef;
+        color: white;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #3a92d8;
+      }
+
+      .badge {
+        position: absolute;
+        top: -1%;
+        right: -1px;
+        background-color: red;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 7px;
+        border-radius: 100px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">
+      Messages
+      <span class="badge">5</span>
+    </button>
+
+    <button class="button">
+      Notifications
+      <span class="badge">!</span>
+    </button>
+
+    <button class="button">
+      Cart
+      <span class="badge">3</span>
+    </button>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+/* 
+CSS selectors are patterns used to select HTML elements you want to style. They determine which elements the styles will be applied to.
+
+Basic CSS rule structure:
+
+selector {
+    property: value;
+}
+selector: Targets the HTML elements to be styled
+property: The style attribute you want to change (e.g., color, font-size)
+value: The value you want to set for the property (e.g., blue, 16px)
+Example targeting all paragraph elements:
+
+p {
+    color: blue;
+    font-size: 16px;
+}
+*/

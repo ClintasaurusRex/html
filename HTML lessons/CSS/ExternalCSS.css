@@ -1,0 +1,19 @@
+/* 
+External CSS allows you to place CSS styles in a separate file and link it to HTML documents using the <link> tag.
+
+Create a CSS file with your styles:
+
+body {
+    background-color: lightblue;
+}
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+Link the CSS file in the HTML <head> section:
+
+<link rel="stylesheet" href="styles.css">
+
+The rel attribute specifies the relationship (stylesheet) and href specifies the path to the CSS file.
+*/

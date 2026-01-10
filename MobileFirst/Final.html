@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <title>Dropdown Menu</title>
+  <head>
+    <title>Local Variables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-font: Arial, sans-serif;
+        --heading-font: "Helvetica", sans-serif;
+        --h1-size: 2rem;
+        --h2-size: 1.5rem;
+        --primary-color: #4a90e2;
+        --secondary-color: #f0f4f8;
+        --body-font-size: 16px;
+      }
+
+      body {
+        font-family: var(--primary-font);
+        margin: 0;
+        padding: 20px;
+        background-color: var(--secondary-color);
+        font-size: var(--body-font-size);
+      }
+
+      h1 {
+        font-family: var(--heading-font);
+        font-size: var(--h1-size);
+        color: var(--primary-color);
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        font-family: var(--heading-font);
+        font-size: var(--h2-size);
+        color: #333;
+        margin-top: 0;
+      }
+
+      nav {
+        margin-bottom: 20px;
+      }
+
+      .menu-button {
+        display: block;
+        padding: 10px 15px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      .nav-list {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-list li {
+        margin-bottom: 10px;
+      }
+
+      .nav-list li a {
+        text-decoration: none;
+        color: var(--primary-color);
+      }
+
+      .profile-img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      section p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input,
+      textarea,
+      button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: white;
+        cursor: pointer;
+      }
+
+      /* Media queries for larger screens */
+      @media (min-width: 768px) {
+        .nav-list {
+          gap: 20px;
+          display: flex;
+        }
+        .menu-button {
+          display: none;
+        }
+
+        .nav-list li {
+          margin-bottom: 0;
+        }
+
+        form {
+          max-width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button class="menu-button">Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Jane Doe</h1>
+      <h2>Web Developer & Designer</h2>
+    </header>
+
+    <section>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="https://upload.wikimedia.org/wikipedia/commons/1/1f/Woman_1.jpg"
+        />
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Woman_1.jpg/250px-Woman_1.jpg"
+          alt="Profile Image"
+          class="profile-img"
+        />
+      </picture>
+    </section>
+
+    <section>
+      <p>
+        Welcome to my profile! I specialize in creating mobile-first, responsive websites that look
+        great on any device. My focus is on performance, accessibility, and clean design.
+      </p>
+    </section>
+
+    <section>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Holy Grail Layout</title>
+    <style>
+      :root {
+        --main-color: #4cafef; /* header/footer */
+        --accent-color: #ff9800; /* highlights */
+        --text-color: #333;
+        --heading-color: #222;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #a9eef3;
+        color: var(--text-color);
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "nav main aside"
+          "footer footer footer";
+        grid-template-columns: 160px 1fr 180px;
+        min-height: 100vh;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      header {
+        color: white;
+        padding: 1.5rem;
+        background-color: var(--main-color);
+        grid-area: header;
+      }
+      footer {
+        color: white;
+        padding: 1rem;
+        background-color: var(--main-color);
+        grid-area: footer;
+      }
+
+      nav {
+        background: #f4f4f4;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        grid-area: nav;
+      }
+
+      nav h3 {
+        margin-top: 0;
+        color: var(--heading-color);
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav li {
+        margin: 0.5rem 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--text-color);
+        padding: 0.3rem 0.5rem;
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+
+      nav a:hover {
+        background: var(--accent-color);
+        color: white;
+      }
+
+      main {
+        padding: 1.5rem;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        grid-area: main;
+      }
+
+      main h2 {
+        margin-top: 0;
+        color: var(--heading-color);
+      }
+
+      aside {
+        background: #fff7e6;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        grid-area: aside;
+      }
+
+      aside h3 {
+        margin-top: 0;
+        color: var(--accent-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Travel Adventures</h1>
+        <p>Explore the world, one journey at a time</p>
+      </header>
+
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Travel Tips</a></li>
+          <li><a href="#">Photo Gallery</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2>Featured Destination: Japan</h2>
+        <p>
+          Japan is a country where ancient traditions meet modern innovation. From the serene
+          temples of Kyoto to the bustling streets of Tokyo, there’s something for every traveler.
+        </p>
+        <p>
+          Don’t forget to try sushi, explore cherry blossoms in spring, and relax in an onsen hot
+          spring bath.
+        </p>
+      </main>
+
+      <aside>
+        <h3>Quick Facts</h3>
+        <ul>
+          <li>Capital: Tokyo</li>
+          <li>Language: Japanese</li>
+          <li>Currency: Yen</li>
+        </ul>
+      </aside>
+
+      <footer>
+        <p>&copy; 2025 Travel Adventures Blog</p>
+      </footer>
+    </div>
+  </body>
+</html>

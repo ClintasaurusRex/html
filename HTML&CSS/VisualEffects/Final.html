@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <title>Dropdown Menu</title>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* Hero Section with Gradient */
+      .hero {
+        padding: 80px 20px;
+        color: #3e2723;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .cta-btn {
+        background-color: #8d6e63;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+      /* Gallery section */
+      .gallery {
+        padding: 50px 20px;
+        background: #fffaf0;
+      }
+
+      .gallery h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #4e342e;
+      }
+
+      .coffee-img {
+        max-width: 300px;
+        border-radius: 12px;
+      }
+      /*Add your CSS here */
+      .hero {
+        background: linear-gradient(to bottom, rgb(19, 110, 138), rgb(208, 255, 0));
+      }
+      .cta-btn:hover {
+        transform: rotate(-3deg);
+        transition: transform 0.5s ease;
+      }
+      .gallery img {
+        filter: sepia(0.6);
+      }
+      .gallery img:hover {
+        filter: sepia(0);
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Welcome to Coffee Bliss</h1>
+      <p>Your daily dose of joy in a cup</p>
+      <button class="cta-btn">Order Now</button>
+    </header>
+
+    <section class="gallery">
+      <h2>Our Signature Blend</h2>
+      <img
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+        alt="Cup of Coffee"
+        class="coffee-img"
+      />
+    </section>
+  </body>
+</html>

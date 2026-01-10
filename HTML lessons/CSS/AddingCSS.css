@@ -1,0 +1,52 @@
+/* 
+
+
+<!-- Internal CSS ( In the head tag)
+
+Internal CSS is added within a <style> tag in the <head> section of an HTML document:
+Internal CSS allows you to apply styles to multiple elements on a single page without external stylesheets.
+
+ <head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+
+    <style>
+      body {
+        background-color: lightgreen;
+      }
+      h1 {
+        color: red;
+      }
+      p {
+        font-size: 18px;
+      }
+    </style>
+
+-->
+
+<!-- Inline Styling
+
+<element style="property: value;"></element>
+<p style="color: blue; font-size: 16px;">This is a paragraph with inline styles.</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline CSS Practice</title>
+</head>
+<body>
+    <h1 style="color: red">My Styled Page</h1>
+    <p style="color: blue; font-size: 18px">This is a styled paragraph</p>
+</body>
+</html>
+-->
+*/

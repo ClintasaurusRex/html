@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tooltips</title>
+    <style>
+      .tooltip-container {
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+      }
+
+      button {
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+
+      .tooltip {
+        /* Animation properties */
+        opacity: 0;
+        transition: opacity 0.3s;
+        background-color: lightblue;
+        color: red;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        visibility: hidden;
+      }
+
+      /* Show the tooltip when hovering over the container */
+      .tooltip-container:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip-container">
+      <button>Help</button>
+      <span class="tooltip">Click for assistance</span>
+    </div>
+  </body>
+</html>
