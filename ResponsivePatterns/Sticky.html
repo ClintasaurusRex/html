@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sticky Header / Footer</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        z-index: 100;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        position: sticky;
+        top: 0;
+        text-align: center;
+        background-color: blue;
+      }
+
+      footer {
+        margin-top: auto;
+        z-index: 100;
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+        position: sticky;
+        bottom: 0;
+        text-align: center;
+        background-color: red;
+      }
+
+      main {
+        flex: 1;
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      h2 {
+        margin-top: 1.5rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Secrets of Longevity</h1>
+    </header>
+
+    <main>
+      <h2>What Are Blue Zones?</h2>
+      <p>
+        Blue Zones are regions of the world where people live much longer than average. Researchers
+        identified several key areas, including Okinawa (Japan), Sardinia (Italy), Nicoya (Costa
+        Rica), Ikaria (Greece), and Loma Linda (California, USA).
+      </p>
+
+      <h2>Common Habits of Long-Lived People</h2>
+      <p>People in Blue Zones often share similar lifestyle habits that contribute to longevity:</p>
+      <ul>
+        <li>Plant-based diets rich in vegetables, beans, and whole grains.</li>
+        <li>Regular physical activity integrated into daily life, like walking or gardening.</li>
+        <li>Strong social connections and family support.</li>
+        <li>Stress reduction through meditation, prayer, or relaxation rituals.</li>
+        <li>Having a sense of purpose, which motivates daily life.</li>
+      </ul>
+
+      <h2>Why Longevity Matters</h2>
+      <p>
+        Studying Blue Zones helps us understand how lifestyle, diet, and community can increase
+        lifespan and improve quality of life. Adopting even a few of these habits can lead to a
+        healthier, happier life.
+      </p>
+
+      <p>Remember, longevity isn’t just about living longer — it’s about living well.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Longevity Insights</p>
+    </footer>
+  </body>
+</html>
