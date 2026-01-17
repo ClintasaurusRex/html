@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Tabs Example</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f8ff; /* very light blue background */
+        padding: 30px;
+        color: #333;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      .tab {
+        padding: 10px 18px;
+        border: none;
+        background: #90caf9; /* light blue */
+        color: #fff;
+        border-radius: 6px 6px 0 0;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition:
+          background 0.2s ease,
+          transform 0.1s ease;
+      }
+
+      .tab:hover {
+        background: #64b5f6; /* brighter blue on hover */
+      }
+
+      .tab:active {
+        transform: translateY(1px);
+      }
+
+      .tab:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.4);
+      }
+
+      .tab-content {
+        background: #ffffff;
+        border: 2px solid #90caf9;
+        border-radius: 0 6px 6px 6px;
+        padding: 20px;
+        line-height: 1.5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+      <!-- Each button calls the function and passes the tab's ID -->
+      <button class="tab" onclick="openTab('home')">Home</button>
+      <button class="tab" onclick="openTab('about')">About</button>
+      <button class="tab" onclick="openTab('contact')">Contact</button>
+    </div>
+
+    <!-- By default, only "Home" is visible -->
+    <div id="home" class="tab-content">Welcome to the homepage!</div>
+    <div id="about" class="tab-content" style="display: none">Learn more about us here.</div>
+    <div id="contact" class="tab-content" style="display: none">Get in touch with us.</div>
+
+    <script>
+      // The function takes a parameter: tabId
+      function openTab(tabId) {
+        // 1. Hide all tab contents
+        document.querySelectorAll(".tab-content").forEach((el) => {
+          el.style.display = "none";
+        });
+
+        // 2. Show the selected tab by its ID
+        document.getElementById(tabId).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
